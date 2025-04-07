@@ -72,6 +72,7 @@ RUN python3 -m pip install --upgrade pip setuptools wheel
 RUN pip3 install \
     numpy==2.1.3 \
     scikit-learn==1.6.1 \
+    pillow==11.1.0 \
     pandas==2.2.3
 
 ## ----------------------------------------------------------------------------
