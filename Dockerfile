@@ -106,4 +106,5 @@ RUN pip3 install \
 RUN pip3 install tensorflow==2.15.0
 
 COPY [".bashrc", ".vimrc", "/root/"]
+EXPOSE 6006
 CMD [ "/bin/bash" ]
