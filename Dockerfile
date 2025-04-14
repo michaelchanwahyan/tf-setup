@@ -56,12 +56,11 @@ RUN cd / ;\
 RUN cd /Python-3.11.9 ;\
     ./configure \
         --disable-test-modules \
-        --without-doc-strings \
         --enable-loadable-sqlite-extensions \
         --enable-optimizations
 
 RUN cd /Python-3.11.9 ;\
-    make -j1 ;\
+    make -j4 ;\
     make install
 
 ## ----------------------------------------------------------------------------
